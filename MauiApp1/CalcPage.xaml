@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.CalcPage"
+             Title="Calculadora">
+    <VerticalStackLayout>
+    
+        <Label 
+            Text="Calcule o valor antes de realizar sua troca!"
+            Margin="50,10,10,60"
+            VerticalOptions="CenterAndExpand"
+            HorizontalOptions="CenterAndExpand" FontSize="Large" FontFamily="Arial Black" />
+  
+
+        <Label
+             Text="Reais Para Pesos Argentinos"
+            TextColor="GreenYellow"
+             Style="{StaticResource Headline}" FontSize="Medium"/>
+
+
+        <Entry x:Name="CalcBox1"
+             Placeholder="Insira a quantidade em Reais"
+             HorizontalOptions="CenterAndExpand"
+             IsReadOnly="False"/>
+
+        <Entry x:Name="ResultBox1"
+            Placeholder="Resultado"
+            HorizontalOptions="CenterAndExpand"
+            IsReadOnly="True" HorizontalTextAlignment="Center"
+               Margin="0,0,0,15"/>
+
+        <Button Text="Calcule seu dinheiro" Clicked="Button_Clicked_1"
+                BackgroundColor="GreenYellow"
+                Margin="0,0,0,70"/>
+
+        <Label
+          Text="Pesos para Reais"
+          TextColor="Red"
+          Style="{StaticResource Headline}" FontSize="Medium"/>
+
+
+        <Entry x:Name="CalcBox"
+            Placeholder="Insira a quantidade em Pesos Argentinos"
+            HorizontalOptions="CenterAndExpand"
+             IsReadOnly="False"/>
+
+        <Entry x:Name="ResultBox"
+            Placeholder="Resultado"
+            HorizontalOptions="CenterAndExpand"
+            IsReadOnly="True" HorizontalTextAlignment="Center"
+            Margin="0,0,0,15"/>
+
+        <Button Text="Calcule seu dinheiro" Clicked="Button_Clicked" 
+          Margin="0,0,0,70" BackgroundColor="Red"/>
+
+    </VerticalStackLayout>
+</ContentPage>

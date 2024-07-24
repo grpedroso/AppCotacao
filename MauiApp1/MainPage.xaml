@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.MainPage"
+             Title="Cotação">
+
+    <ScrollView BackgroundColor="#1E2A38">
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+
+            <Label
+              Text="Olá,&#10;Bem vindo de volta. &#10;"
+              Style="{StaticResource Headline}"
+              SemanticProperties.HeadingLevel="Level4" FontFamily="Impact" FontSize="Large" />
+
+            <Label
+                Text="Cotação de Real para Peso Argentino:"
+                TextColor="GreenYellow"
+                Style="{StaticResource SubHeadline}"
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="Welcome to dot net Multi platform App U I" />
+
+            <Entry x:Name="TextBox"
+                   Placeholder="Cotação do momento"
+                   HorizontalOptions="CenterAndExpand"
+                   IsReadOnly="True"/>
+
+            <Label
+                Text="Cotação de Peso Argentino Para Real"
+                TextColor="Red"
+                Style="{StaticResource SubHeadline}"
+                SemanticProperties.HeadingLevel="Level2"
+                />
+
+            <Entry x:Name="TextBoxA"
+                Placeholder="Cotação do momento"
+                HorizontalOptions="CenterAndExpand"
+                IsReadOnly="True"/>
+
+            
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
